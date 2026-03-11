@@ -1,0 +1,13 @@
+package test
+
+import "num"
+
+// This is a single-line comment
+/*
+ This is a
+ multi-line comment
+*/
+
+func F(x [2][3]float32) [2][3]float32 {
+	return 2 * x
+}
