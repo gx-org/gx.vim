@@ -6,8 +6,8 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword gxKeyword if else while for return func import
-syn keyword gxType int float string bool
+syn keyword gxKeyword if else for return func import package struct var type range
+syn keyword gxType bfloat16 uint8 uint16 uint32 uint64 int8 int16 int32 int64 float32 float64 string bool intlen intidx
 syn keyword gxBoolean true false
 
 " Numbers
@@ -16,6 +16,7 @@ syn match gxNumber "\v<\d+\.\d*>"
 
 " Strings
 syn region gxString start=/\v"/ skip=/\v\\./ end=/\v"/
+syn region gxString start=/\v`/ skip=/\v\\./ end=/\v`/
 
 " Comments
 syn match gxComment "\v//.*$"
