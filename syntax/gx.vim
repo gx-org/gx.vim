@@ -6,7 +6,7 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword gxKeyword if else while for return func import
+syn keyword gxKeyword if else while for return func import struct interface
 syn keyword gxType int float string bool
 syn keyword gxBoolean true false
 
